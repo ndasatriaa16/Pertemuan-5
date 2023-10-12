@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+class gaji {
+    public static void main(String[] args) {
+
+        Scanner Input= new Scanner(System.in);
+        System.out.println("PENETAPAN GAJI KARYAWAN");
+
+        // NAMA
+        System.out.print("Nama :");
+        String nama= Input.nextLine();
+
+        // Departemen
+         System.out.print("Departemen tempat bekerja :");
+        String tempat= Input.nextLine();
+
+        // Departemen kerja
+         System.out.print("Departemen kerja Prduksi/Inventory/Marketing :");
+        String kerja= Input.nextLine(); 
+
+    
+        // Waktu
+         System.out.print("Masa pengalaman bekerja :");
+        double waktu= Input.nextDouble();
+        
+
+        if (waktu<=1) {
+            System.out.println("Gaji Anda sebesar Rp.3.000.000");
+        }
+
+        else if (waktu>1 && waktu<=2) {
+              System.out.println("Gaji Anda sebesar Rp.4.000.000");
+        }
+
+        else if(waktu>2) {
+              System.out.println("Gaji Anda sebesar Rp.5.000.000");
+        }
+
+        else  {
+            System.out.println("Maaf Anda Belum Beruntung");
+        }
+
+
+
+    }
+}
